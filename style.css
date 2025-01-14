@@ -1,0 +1,83 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1000;
+  }
+  
+  /* Layout Styles */
+  .container {
+    display: flex;
+    margin-top: 60px; /* Space for fixed navbar */
+  }
+  
+  .left-menu {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+  }
+  
+  .left-menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .left-menu ul li {
+    margin: 1rem 0;
+    color: #333;
+  }
+  
+  .left-menu button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .main-content {
+    width: 60%;
+    padding: 1rem;
+  }
+  
+  .right-panel {
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-menu, .main-content, .right-panel {
+      width: 100%;
+    }
+  }
+  
